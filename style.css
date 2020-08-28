@@ -3,7 +3,7 @@ table {
     margin: 15px 0;
 }
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
+
+p,h1,h2,option,input {
+    font-family: sans-serif;
 }
