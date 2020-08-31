@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,19 +12,50 @@
         <h1>Coffee!</h1>
     </header>
 
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>any</option>
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-        </select>
-        <input id="submit" type="submit" />
-    </form>
+    <div class="container mb-3 ">
 
-    <main id="main"></main>
+        <div class="row align-items-start">
 
+            <div class="col-lg col-sm-12">
+                <form id="search_form" >
+                    <label for="roast-selection" class="form-label">Search</label>
+                    <input id="search_bar" type="text" placeholder="Search Here" class="form-control" />
+
+                    <select id="roast-selection" class="form-select form-select-sm">
+                        <option selected >all</option>
+                        <option>light</option>
+                        <option>medium</option>
+                        <option>dark</option>
+                    </select>
+                </form>
+            </div>
+
+
+            <div class="col-lg col-sm-12">
+                <form id="add_coffee_form">
+                    <label for="add_coffee" class="form-label">Add Coffee</label>
+                    <input id="add_coffee" type="text" placeholder="Coffee Name" class="form-control" />
+
+                    <div class="input-group">
+                        <select id="roast_selection_to_add" class="form-select form-select-sm">
+                            <option>light</option>
+                            <option>medium</option>
+                            <option>dark</option>
+                        </select>
+                        <button id="submit_coffee" class="btn btn-outline-secondary btn-sm" type="button" >Add Coffee</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <main id="main" class="container d-flex flex-wrap"></main>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>

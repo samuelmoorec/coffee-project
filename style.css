@@ -4,6 +4,55 @@ table {
 }
 
 
+
 p,h1,h2,option,input {
     font-family: sans-serif;
+    color: linear-gradient(#e66465, #9198e5);
 }
+
+
+
+
+@media screen and (max-width: 576px) {
+
+    .coffee_card{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+
+    .coffee_card{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .coffee_card{
+        width: 50%;
+    }
+
+}
+
+@media screen and (min-width: 992px) { 
+
+    .coffee_card{
+        width: 33.333%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    .coffee_card{
+        width: 25%;
+    }
+
+}
+
+
