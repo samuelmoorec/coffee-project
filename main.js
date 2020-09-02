@@ -23,7 +23,7 @@ const coffeeSorting = (a,b) => {
                 return 0;
             }
         }
-    }else if(a.roast === "medium"){
+    }else if(a.roast === "medium"){s
         if(b.roast === "dark"){
             return -1;
         }else if(b.roast === "light"){
